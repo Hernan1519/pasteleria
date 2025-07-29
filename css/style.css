@@ -1,0 +1,266 @@
+html{
+    font-size: 16px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7D2A0C;
+    background-color: #ECDDB6;
+    position :sticky;
+    top: 0px;
+    height: 150px;
+    
+}
+.logo{
+    
+    width: 250px;
+    margin-left: 20px;
+    
+}
+h1{
+
+    font-size: 2.5rem;
+    color:#433512;
+    font-family: "Pacifico", cursive;
+    background-color: #ECDDB6;
+    height: auto;
+    margin-bottom: 4px;
+    
+}
+h4{
+    font-size: 1.4rem;
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+li{
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    text-decoration: none; 
+    font-weight: bold;
+    
+}
+nav ul li a {
+  text-decoration: none;
+  color:#433512;
+}
+.nav{
+    
+    margin-right: 50px;
+    
+}
+nav ul li a:hover {
+  color: #7D2A0C;
+}
+
+body {
+    background-image: url("../img/presentacion2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.presentacion{
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    gap: 20px;
+}
+.parrafos {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  
+}
+.p1, .p2 {
+  margin: 8px 0;
+  color:#b51007;
+  font-family: "Fuzzy Bubbles",sans-serif ;
+  text-shadow: 2px 2px 4px black;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  
+  
+  
+}
+.imgp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    
+}
+.imgp img {
+  width: 100%;
+  height: auto;
+}
+.h2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color:#CA9A4E;
+    font-family: "Fuzzy Bubbles",sans-serif ;
+    text-shadow: 2px 2px 4px black;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.bloque-video {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  color:#7D2A0C;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgb(252, 250, 250);
+  
+}
+.bloque-video video,
+.bloque-video iframe {
+  width: 350px;
+  height: 350px;
+}
+.catalogo {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+.catalogo img{
+    width: 350px;
+    height: 350px;
+    transition: transform 0.5s ease-in-out;
+}
+.catalogo img:hover{
+    transform: scale(1.1);
+}
+.pfooter{
+    color: #7D2A0C;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #CA9A4E;
+}
+body.resp {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 599px) {
+  body.resp {
+    background-color: #0000ff;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  body.resp {
+    background-color: #008000;
+    color: #ffffff;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body.resp {
+    background-color: #800080;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.resp {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+}
+
+.producto {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #CA9A4E;
+  border-radius: 10px;
+  padding: 15px;
+  width: 350px;
+  text-align: center;
+  font-family: "Fuzzy Bubbles", sans-serif;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  color: #7D2A0C;
+  margin: 10px 0 5px 0;
+}
+
+.descripcion {
+  font-size: 1rem;
+  color: #433512;
+  margin-bottom: 8px;
+}
+
+.precio {
+  color: #b51007;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.btn-agregar {
+  background-color: #CA9A4E;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #7D2A0C;
+}
+.catalogo .producto button {
+  background-color: #f15a24;    /* naranja vibrante */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.catalogo .producto button:hover {
+  background-color: #d14a1c;    /* naranja oscuro al pasar mouse */
+}

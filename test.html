@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="./css/carrito.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+    </ul>
+  </nav>
+    
+  <h1>Carrito de Compras</h1>
+
+  <div class="producto">
+    <span>Pastaflora - $10000</span>
+    <button onclick="agregarAlCarrito('Pastaflora', 10000)">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <span>Chocotorta - $4000</span>
+    <button onclick="agregarAlCarrito('Chocotorta', 4000)">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <span>Tarta Mousse - $15000</span>
+    <button onclick="agregarAlCarrito('Tarta Mousse', 15000)">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <span>Macarron - $1500</span>
+    <button onclick="agregarAlCarrito('Macarron', 1500)">Agregar</button>
+  </div>
+
+  <div class="carrito">
+    <h2>Tu carrito:</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: $<span id="total">0</span></strong></p>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+  </div>
+
+  <form id="formulario-compra" action="https://formspree.io/f/mwpoglyj" method="POST">
+    <input type="hidden" name="productos" id="input-productos">
+    <input type="hidden" name="total" id="input-total">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <button type="submit">Enviar pedido</button>
+  </form>
+
+  <script src="./js/test.js"></script>
+</body>
+</html>
+
+

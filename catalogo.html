@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <title>Catalogo de productos</title>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <img src="./img/logo.png" width="50%" alt="Logo">
+        </div>
+        <div class="titulo">
+            <h1>Pasteleria del hogar</h1> 
+            <h4>Productos hechos con la calidad del hogar </h4>
+            
+        </div>
+        <div class="nav">
+            <nav>
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i>  Inicio</a></li>
+            <li><a href="./test.html"><i class="fa-solid fa-cart-shopping"></i> Compras</a></li>  
+            <li><a href="./catalogo.html">Catalogo</a></li>
+            <li><a href="./index.html#destacado">Destacado</a></li>
+            <li><a href="./ubicacion.html">Ubicacion</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+        </div>
+    
+    </header>
+    <main>
+  <div class="catalogo">
+    
+    <div class="producto">
+      <img src="./img/mousse.jpg" alt="Tarta Mousse">
+      <h3>Mousse de chocolate</h3>
+      <p class="descripcion">Suave mousse casero con cacao premium. Ideal para postres especiales.</p>
+      <p class="precio">$15000</p>
+      <button onclick="agregarAlCarrito('Tarta Mousse', 15000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="./img/macarrones.jpg" alt="Macarrones">
+      <h3>Macarrones franceses</h3>
+      <p class="descripcion">Coloridos y rellenos con crema de almendras y frutas.</p>
+      <p class="precio">$1500</p>
+      <button onclick="agregarAlCarrito('Macarron', 1500)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="./img/pastaflora.jpg" alt="Pastafrola">
+      <h3>Pastafrola</h3>
+      <p class="descripcion">Tradicional tarta con relleno de membrillo y masa casera.</p>
+      <p class="precio">$10000</p>
+      <button onclick="agregarAlCarrito('Pastaflora', 10000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="./img/choco.jpg" alt="Chocotorta">
+      <h3>Chocotorta</h3>
+      <p class="descripcion">Clásica chocotorta de galletitas y dulce de leche con crema.</p>
+      <p class="precio">$4000</p>
+      <button onclick="agregarAlCarrito('Chocotorta', 4000)">Agregar</button>
+    </div>
+
+  </div>
+</main>
+
+    
+    <footer>
+        <hr>
+        <p class="pfooter">Desarrollador:Rios Javier |<a href="mailto: rios.hernan1519@gmail.com"> Email :Rios.hernan1519@gmail.com</a> 
+        </p>
+        <hr>
+    </footer>
+    <script src="./js/test.js"></script>
+</body>
+</html>
