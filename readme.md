@@ -1,4 +1,4 @@
-Web de pasteleria en lina-
+Web de pasteleria en linea-
 
 =================
 
